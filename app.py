@@ -17,8 +17,8 @@ def save_data(data):
     with open(FILE_NAME, "w",encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
-st.set_page_config(page_title="オリジナルアキュミュレーション",page_icon=":books:")
-st.title("MY表現/単語集")
+st.set_page_config(page_title="アキュミュレーション",page_icon=":books:")
+st.title("表現/単語集")
 st.write("知らなかった表現や単語をまとめる")
 
 vocab_list = load_data()
